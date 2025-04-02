@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar {
+            background-color: #0d082b;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        
+        .navbar a:hover {
+            color: #f461b2;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 style="color: white;">Teste</h1>
+        <div>
+            <a href="#">Início</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre nós</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="card">
+            <img src="Imagens/vendasonline.jpg" alt="Imagem 1">
+            <h3>Vendas Online</h3>
+            <p>Relatorios de vendas online</p>
+        </div>
+        <div class="card">
+            <img src="Imagens/reuniao.jpg" alt="Imagem 2">
+            <h3>Reunião</h3>
+            <p>Reunião sobre as vendas online</p>
+        </div>
+        <div class="card">
+            <img src="Imagens/Site.jpg" alt="Imagem 3">
+            <h3>Site</h3>
+            <p>Correções no site </p>
+        </div>
+        <div class="card">
+            <img src="Imagens/clientes.jpg" alt="Imagem 4">
+            <h3>Clientes</h3>
+            <p>Atendimento ao cliente </p>
+        </div>
+    </div>
+</body>
+</html>
